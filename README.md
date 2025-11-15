@@ -29,6 +29,12 @@ Value: <your Docker Hub PAT> (create at https://hub.docker.com/settings/security
 )
 ---
 
+## Stats
+[![CI](https://img.shields.io/github/actions/workflow/status/janneshatzius/ESDE_WORKSHOP_TASK_CICD/CI.yml?branch=main)](https://github.com/janneshatzius/ESDE_WORKSHOP_TASK_CICD/actions/workflows/CI.yml) 
+
+[![CD](https://img.shields.io/github/actions/workflow/status/janneshatzius/ESDE_WORKSHOP_TASK_CICD/CD.yml?branch=main)](https://github.com/janneshatzius/ESDE_WORKSHOP_TASK_CICD/actions/workflows/CD.yml) 
+
+[![codecov](https://codecov.io/gh/janneshatzius/ESDE_WORKSHOP_TASK_CICD/graph/badge.svg?token=O77MK9D3UC)](https://codecov.io/gh/janneshatzius/ESDE_WORKSHOP_TASK_CICD)
 ## ▶️ Quick Start: run the prebuilt image (no login needed)
 
 ```bash
