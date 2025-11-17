@@ -5,7 +5,7 @@ on:
     branches: "**"
   pull_request:
     branches: [ "main" ]
-  workflow_dispatch:
+    types: [ opened, synchronize, reopened, ready_for_review ]
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
@@ -13,10 +13,13 @@ concurrency:
 
 permissions:
   contents: read
+  checks: write
+  pull-requests: write
+  id-token: write
 
 jobs:
   build:
-    name: CI Skeleton
+    name: CI (Build & Test)
     runs-on: ubuntu-latest
 
     steps:
@@ -32,38 +35,39 @@ jobs:
       - name: Setup Gradle (cache)
         uses: gradle/actions/setup-gradle@v4
 
-      # ------------------------- STUDENT TODOs -------------------------
-      # TODO: Replace this placeholder with a build step that:
-      #  - cleans previous outputs,
-      #  - compiles and runs unit tests,
-      #  - generates a machine-readable coverage report for the test run,
-      #  - and produces a runnable application artifact.
-      # Expectation:
-      #  - The workflow fails if tests fail.
-      #  - A coverage XML is produced in the standard reports location.
-      #  - The application artifact is available under the usual build folder.
+
+    # - name: Build, test & coverage
+    #   run: TODO1
+
+
+    # - name: Publish unit test results
+    #   uses: TODO2
+    #   if: ${{ TODO3 && (TODO4 || TODO5) }}
+    #   with:
+    #     files: TODO6
+
+#   dependency-submission:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       contents: TODO7
+#       if: ${{ TODO8 }}
+#       steps:
+#         - uses: TODO9
+#
+#         - name: Set up JDK 17
+#           uses: TODO10
+#           with:
+#             distribution: TODO11
+#             java-version: TODO12
+#
+#         - name: Generate and submit dependency graph
+#           uses: TODO13
+#           continue-on-error: TODO14
+
+
+
       - name: TODO – build, tests, coverage
-        run: echo "Build, run tests, generate coverage report, and build the app artifact."
-
-      # TODO: Add a step to upload the HTML coverage report
-      # as a workflow artifact so it can be viewed from the Actions run summary.
-      # Expectation:
-      #  - The artifact is named clearly (e.g., coverage report).
-      #  - The uploaded path corresponds to the HTML coverage output directory.
-      # - name: TODO – upload HTML coverage artifact
-      #   run: echo "Upload the HTML coverage directory as an artifact."
-
-      # TODO: Add a step to publish the coverage XML to a coverage service
-      # (e.g., Codecov) so PRs get a coverage status/check.
-      # Expectation:
-      #  - The step runs after tests/coverage have completed.
-      #  - It references the generated XML report.
-      #  - It uses the appropriate authentication mechanism for same-repo runs.
-      # - name: TODO – upload coverage to coverage service
-      #   run: echo "Upload the XML coverage report to an external service."
-      # ----------------------------------------------------------------
+        run: echo "Build, run tests, upload a test report, and build the app artifact. (You can delete this after successfully implementing the TODOS)"
 
 
-
-      # TODO-3 (optional): Upload coverage to Codecov
 
