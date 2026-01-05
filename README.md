@@ -2,7 +2,7 @@
 
 ---
 
-## Prerequisites
+## Prerequisitess
 
 - Docker installed (Desktop or Engine)
 - Git + GitHub account
