@@ -13,8 +13,8 @@ concurrency:
 permissions:
   contents: read
   packages: write
-# pages: write      # Only uncomment once you try to deploy GitHub Pages
-# id-token: write   # Only uncomment once you try to deploy-pages for OIDC
+  pages: write      # Only uncomment once you try to deploy GitHub Pages
+  id-token: write   # Only uncomment once you try to deploy-pages for OIDC
 
 jobs:
    docker:
