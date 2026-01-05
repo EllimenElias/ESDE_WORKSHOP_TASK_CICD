@@ -113,10 +113,9 @@ And run a container here:
 Afterwards you can check if it worked at: http://localhost:8080/
  
 ## Repository Badges - Adapt the Link to match YOUR fork to see results
-<!---
-[![CI](https://img.shields.io/github/actions/workflow/status/janneshatzius/ESDE_WORKSHOP_TASK_CICD/CI.yml?branch=main)](https://github.com/janneshatzius/ESDE_WORKSHOP_TASK_CICD/actions/workflows/CI.yml) 
 
-[![CD](https://img.shields.io/github/actions/workflow/status/janneshatzius/ESDE_WORKSHOP_TASK_CICD/CD.yml?branch=main)](https://github.com/janneshatzius/ESDE_WORKSHOP_TASK_CICD/actions/workflows/CD.yml) 
+[![CI](https://img.shields.io/github/actions/workflow/status/EllimenElias/ESDE_WORKSHOP_TASK_CICD/CI.yml?branch=main)](https://github.com/EllimenElias/ESDE_WORKSHOP_TASK_CICD/actions/workflows/CI.yml) 
 
-[![codecov](https://codecov.io/gh/janneshatzius/ESDE_WORKSHOP_TASK_CICD/graph/badge.svg?token=O77MK9D3UC)](https://codecov.io/gh/janneshatzius/ESDE_WORKSHOP_TASK_CICD) 
---->
+[![CD](https://img.shields.io/github/actions/workflow/status/EllimenElias/ESDE_WORKSHOP_TASK_CICD/CD.yml?branch=main)](https://github.com/EllimenElias/ESDE_WORKSHOP_TASK_CICD/actions/workflows/CD.yml) 
+
+[![codecov](https://codecov.io/gh/EllimenElias/ESDE_WORKSHOP_TASK_CICD/graph/badge.svg?token=O77MK9D3UC)](https://codecov.io/gh/EllimenElias/ESDE_WORKSHOP_TASK_CICD) 
